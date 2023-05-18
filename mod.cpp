@@ -1,4 +1,4 @@
-name = "[LNX] Logistics]";
+name = "[LNX] Logistics";
 tooltipOwned= "Lynx's Logistics";
 picture = "logo.paa";
 logoSmall = "logo.paa";
