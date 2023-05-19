@@ -6,13 +6,15 @@ class CfgPatches
 		name = "LNX - Individual First Aid Kit";
 		requiredVersion = 2.0;
 		requiredAddons[] = 
-		{ 
+		{
+			"cba_common",
+			"cba_settings",
 			"ace_common", 
 			"ace_medical_treatment",
 			"kat_main"
 		};
 		units[] = {};
-		weapons[] = {};
+		weapons[] = { "LNX_IFAK" };
 	};
 };
 
@@ -22,8 +24,8 @@ class CfgFunctions
 	{
 		class IFAK
 		{
-			class initIFAK { file = "\LNX_IFAK\fnc\fn_initIFAK.sqf"; postInit = 1; };
-			class openIFAK { file = "\LNX_IFAK\fnc\fn_openIFAK.sqf"; };
+			class initIFAK { file = "\LNX_IFAK\IFAK\fn_initIFAK.sqf"; postInit = 1; };
+			class openIFAK { file = "\LNX_IFAK\IFAK\fn_openIFAK.sqf"; };
 		};
 	};
 };
