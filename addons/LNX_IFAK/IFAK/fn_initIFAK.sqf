@@ -2,7 +2,7 @@
 	"LNX_IFAK_Contents", 
 	"EDITBOX" , 
 	["IFAK Content", "Specify an array of items to be contained in the IFAK."], 
-	"LNX - Logistics", 
+	["LNX - Logistics", "IFAK"], 
 	"[""ACE_elasticBandage"",""ACE_elasticBandage"",""ACE_packingBandage"",""ACE_packingBandage"",""ACE_packingBandage"",""ACE_packingBandage"",""ACE_packingBandage"",""ACE_packingBandage"",""ACE_quikclot"",""ACE_quikclot"",""ACE_tourniquet"",""ACE_tourniquet""]",
 	1,
 	{
