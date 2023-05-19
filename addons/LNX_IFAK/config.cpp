@@ -31,8 +31,8 @@ class CfgVehicles
 				class LNX_IFAK_Open
 				{
 					displayName = "Open IFAK";
-					condition = "[_player, 'LNX_IFAK'] call BIS_fnc_hasItem;";
-					statement = "[_player] call LNX_fnc_openIFAK;";
+					condition = "[_player, 'LNX_IFAK'] call BIS_fnc_hasItem";
+					statement = "[_player] call LNX_fnc_openIFAK";
 				};
 			};
 		};
@@ -43,8 +43,8 @@ class CfgVehicles
 				class LNX_PatientIFAK
 				{
 					displayName = "Open patient IFAK";
-					condition = "[_target, 'LNX_IFAK'] call BIS_fnc_hasItem;";
-					statement = "[_target] call LNX_fnc_openIFAK;";
+					condition = "[_target, 'LNX_IFAK'] call BIS_fnc_hasItem";
+					statement = "[_target] call LNX_fnc_openIFAK";
 				};
 			};
 		};
