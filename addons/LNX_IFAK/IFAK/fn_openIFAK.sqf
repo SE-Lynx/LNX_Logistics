@@ -15,5 +15,5 @@ if !(false in _check) then {
 		_unit addItem _x;
 	} forEach _contentIFAK;
 } else {
-	hint "No space for IFAK contents";
+	hint "Not enough space for IFAK contents";
 };

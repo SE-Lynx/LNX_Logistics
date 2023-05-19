@@ -22,7 +22,7 @@ class CfgPatches
 class CfgVehicles
 {
 	class Man;
-    class CAManBase: Man 
+	class CAManBase: Man 
 	{
 		class ACE_SelfActions 
 		{
