@@ -11,8 +11,7 @@ class CfgPatches
 			"cba_settings",
 			"ace_common",
 			"ace_interaction", 
-			"ace_medical_treatment",
-			"kat_main"
+			"ace_medical_treatment"
 		};
 		units[] = {};
 		weapons[] = { "LNX_IFAK" };
