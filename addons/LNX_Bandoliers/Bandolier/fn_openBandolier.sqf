@@ -14,7 +14,10 @@ switch (_type) do {
 		if !(false in _check) then {
 			_unit removeItem "LNX_Bandolier";
 			{
-				_unit addMagazine _x;
+				for "_i" from 1 to (_x select 1) do 
+				{
+					_unit addItem (_x select 0);
+				};
 			} forEach _content;
 		} else {
 			hint "Not enough space for bandolier contents";
@@ -34,7 +37,10 @@ switch (_type) do {
 		if !(false in _check) then {
 			_unit removeItem "LNX_AR_Bandolier";
 			{
-				_unit addMagazine _x;
+				for "_i" from 1 to (_x select 1) do 
+				{
+					_unit addItem (_x select 0);
+				};
 			} forEach _contentAR;
 		} else {
 			hint "Not enough space for AR bandolier contents";
@@ -54,7 +60,10 @@ switch (_type) do {
 		if !(false in _check) then {
 			_unit removeItem "LNX_UGL_Bandolier";
 			{
-				_unit addMagazine _x;
+				for "_i" from 1 to (_x select 1) do 
+				{
+					_unit addItem (_x select 0);
+				};
 			} forEach _contentUGL;
 		} else {
 			hint "Not enough space for UGL bandolier contents";
@@ -74,7 +83,10 @@ switch (_type) do {
 		if !(false in _check) then {
 			_unit removeItem "LNX_LMG_Bandolier";
 			{
-				_unit addMagazine _x;
+				for "_i" from 1 to (_x select 1) do 
+				{
+					_unit addItem (_x select 0);
+				};
 			} forEach _contentLMG;
 		} else {
 			hint "Not enough space for LMG bandolier contents";
@@ -94,7 +106,10 @@ switch (_type) do {
 		if !(false in _check) then {
 			_unit removeItem "LNX_GPMG_Bandolier";
 			{
-				_unit addMagazine _x;
+				for "_i" from 1 to (_x select 1) do 
+				{
+					_unit addItem (_x select 0);
+				};
 			} forEach _contentGPMG;
 		} else {
 			hint "Not enough space for GPMG bandolier contents";
@@ -114,7 +129,10 @@ switch (_type) do {
 		if !(false in _check) then {
 			_unit removeItem "LNX_DMR_Bandolier";
 			{
-				_unit addMagazine _x;
+				for "_i" from 1 to (_x select 1) do 
+				{
+					_unit addItem (_x select 0);
+				};
 			} forEach _contentDMR;
 		} else {
 			hint "Not enough space for DMR bandolier contents";
