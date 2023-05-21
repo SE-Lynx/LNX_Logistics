@@ -6,13 +6,47 @@ class CfgPatches
 		name = "LNX - Individual First Aid Kit";
 		requiredVersion = 2.0;
 		requiredAddons[] = 
-		{ 
-			"ace_common", 
-			"ace_medical_treatment",
-			"kat_main"
+		{
+			"cba_common",
+			"cba_settings",
+			"ace_common",
+			"ace_interaction", 
+			"ace_medical_treatment"
 		};
 		units[] = {};
-		weapons[] = {};
+		weapons[] = { "LNX_IFAK" };
+	};
+};
+
+class CfgVehicles
+{
+	class Man;
+	class CAManBase: Man 
+	{
+		class ACE_SelfActions 
+		{
+			class ACE_Medical
+			{
+				class LNX_IFAK_Open
+				{
+					displayName = "Open IFAK";
+					condition = "[_player, 'LNX_IFAK'] call BIS_fnc_hasItem";
+					statement = "[_player] call LNX_fnc_openIFAK";
+				};
+			};
+		};
+		class ACE_Actions
+		{
+			class ACE_MainActions
+			{
+				class LNX_PatientIFAK
+				{
+					displayName = "Open patient IFAK";
+					condition = "[_target, 'LNX_IFAK'] call BIS_fnc_hasItem";
+					statement = "[_target] call LNX_fnc_openIFAK";
+				};
+			};
+		};
 	};
 };
 
@@ -22,8 +56,8 @@ class CfgFunctions
 	{
 		class IFAK
 		{
-			class initIFAK { file = "\LNX_IFAK\fnc\fn_initIFAK.sqf"; postInit = 1; };
-			class openIFAK { file = "\LNX_IFAK\fnc\fn_openIFAK.sqf"; };
+			class initIFAK { file = "\LNX_IFAK\IFAK\fn_initIFAK.sqf"; postInit = 1; };
+			class openIFAK { file = "\LNX_IFAK\IFAK\fn_openIFAK.sqf"; };
 		};
 	};
 };
