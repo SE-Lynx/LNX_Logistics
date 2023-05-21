@@ -23,7 +23,7 @@
 ] call CBA_fnc_addSetting;
 
 [
-	"LNX_UGL_Bandolier", 
+	"LNX_UGL_Bandolier",
 	"EDITBOX", 
 	["Bandolier (UGL)", "Specify an array of items to be contained in Bandolier (UGL)."], 
 	["LNX - Logistics", "Bandoliers"],

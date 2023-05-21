@@ -28,41 +28,46 @@ class CfgVehicles
 		{
 			class ACE_Equipment
 			{
-				class LNX_Bandolier_Open
+				class LNX_Bandoliers
 				{
-					displayName = "Open Bandolier";
-					condition = "[_player, 'LNX_Bandolier'] call BIS_fnc_hasItem";
-					statement = "[_player, ""Generic""] call LNX_fnc_openBandolier";
-				};
-				class LNX_ARBandolier_Open
-				{
-					displayName = "Open AR Bandolier";
-					condition = "[_player, 'LNX_AR_Bandolier'] call BIS_fnc_hasItem";
-					statement = "[_player, ""AR""] call LNX_fnc_openBandolier";
-				};
-				class LNX_UGLBandolier_Open
-				{
-					displayName = "Open UGL Bandolier";
-					condition = "[_player, 'LNX_UGL_Bandolier'] call BIS_fnc_hasItem";
-					statement = "[_player, ""UGL""] call LNX_fnc_openBandolier";
-				};
-				class LNX_LMGBandolier_Open
-				{
-					displayName = "Open LMG Bandolier";
-					condition = "[_player, 'LNX_LMG_Bandolier'] call BIS_fnc_hasItem";
-					statement = "[_player, ""LMG""] call LNX_fnc_openBandolier";
-				};
-				class LNX_GPMGBandolier_Open
-				{
-					displayName = "Open GPMG Bandolier";
-					condition = "[_player, 'LNX_GPMG_Bandolier'] call BIS_fnc_hasItem";
-					statement = "[_player, ""GPMG""] call LNX_fnc_openBandolier";
-				};
-				class LNX_DMRBandolier_Open
-				{
-					displayName = "Open DMR Bandolier";
-					condition = "[_player, 'LNX_DMR_Bandolier'] call BIS_fnc_hasItem";
-					statement = "[_player, ""DMR""] call LNX_fnc_openBandolier";
+					displayName = "Bandoliers";
+					condition = "[_player, (isKindOf 'LNX_Bandolier')] call BIS_fnc_hasItem";
+					class LNX_Bandolier_Open
+					{
+						displayName = "Open Bandolier";
+						condition = "[_player, 'LNX_Bandolier'] call BIS_fnc_hasItem";
+						statement = "[_player, ""Generic""] call LNX_fnc_openBandolier";
+					};
+					class LNX_ARBandolier_Open
+					{
+						displayName = "Open AR Bandolier";
+						condition = "[_player, 'LNX_AR_Bandolier'] call BIS_fnc_hasItem";
+						statement = "[_player, ""AR""] call LNX_fnc_openBandolier";
+					};
+					class LNX_UGLBandolier_Open
+					{
+						displayName = "Open UGL Bandolier";
+						condition = "[_player, 'LNX_UGL_Bandolier'] call BIS_fnc_hasItem";
+						statement = "[_player, ""UGL""] call LNX_fnc_openBandolier";
+					};
+					class LNX_LMGBandolier_Open
+					{
+						displayName = "Open LMG Bandolier";
+						condition = "[_player, 'LNX_LMG_Bandolier'] call BIS_fnc_hasItem";
+						statement = "[_player, ""LMG""] call LNX_fnc_openBandolier";
+					};
+					class LNX_GPMGBandolier_Open
+					{
+						displayName = "Open GPMG Bandolier";
+						condition = "[_player, 'LNX_GPMG_Bandolier'] call BIS_fnc_hasItem";
+						statement = "[_player, ""GPMG""] call LNX_fnc_openBandolier";
+					};
+					class LNX_DMRBandolier_Open
+					{
+						displayName = "Open DMR Bandolier";
+						condition = "[_player, 'LNX_DMR_Bandolier'] call BIS_fnc_hasItem";
+						statement = "[_player, ""DMR""] call LNX_fnc_openBandolier";
+					};
 				};
 			};
 		};
